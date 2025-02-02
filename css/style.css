@@ -45,8 +45,8 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	background: #0b24c2 url(../images/bg1.png);	/*背景色と背景画像の読み込み（古いブラウザ用）*/
-	background: url(../images/bg1.png), linear-gradient(#0b24c2, #1e4fff);		/*背景画像の読み込みと、グラデーション*/
+	background: #B19DFC url(../images/bg1.png);	/*背景色と背景画像の読み込み（古いブラウザ用）*/
+	background: url(../images/bg1.png), linear-gradient(#B19DFC, #E9E3FC);		/*背景画像の読み込みと、グラデーション*/
 	height: 100px;	/*高さ*/
 }
 /*ロゴ画像*/

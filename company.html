@@ -11,7 +11,27 @@
 <link rel="stylesheet" href="css/slide.css">
 <script type="text/javascript" src="js/openclose.js"></script>
 <script type="text/javascript" src="js/fixmenu_pagetop.js"></script>
+<script>
+        function login() {
+            const password = document.getElementById("password").value;
+            if (password === "password123") { // パスワードは固定
+                alert("ログイン成功！");
+                // ログイン後に表示するコンテンツを表示する処理
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("protected-content").style.display = "block";
+            } else {
+                alert("パスワードが間違っています。");
+            }
+        }
+    </script>
 </head>
+<body>
+    <div id="login-form">
+        <h2>ログイン</h2>
+        <input type="password" id="password" placeholder="パスワード">
+        <button onclick="login()">ログイン</button>
+    </div>
+
 
 <body>
 

@@ -1,9 +1,9 @@
 <?php 
 error_reporting (E_ALL & ~E_NOTICE & ~E_WARNING & ~E_STRICT & ~E_DEPRECATED);
 //
-$mail_sys = "";	// 管理者のメールアドレス
-$from_name = "サンプル株式会社";	// メール送信者の表示
-$from_mail = "";	// メール送信者のメールアドレス（返信先）
+$mail_sys = "mahokaho.0119@gmail.com";	// 管理者のメールアドレス
+$from_name = "お問い合わせページからの照会";	// メール送信者の表示
+$from_mail = "mahokaho.0119@gmail.com";	// メール送信者のメールアドレス（返信先）
 $user_mail = "item2";	// 利用者にメールを送る場合のメールアドレス項目
 //---
 $title = "お問い合わせフォーム";
@@ -11,7 +11,7 @@ $subject = "お問い合わせ有難うございます\n";
 $body = "お問い合わせ有難うございます。
 以下の内容で承りました。
 \n";
-$subject_sys = "お問い合わせがありました\n";
+$subject_sys = "お問い合わせを受信しました\n";
 $body_sys = "\n";
 $footer = "\n------------
 サンプル株式会社

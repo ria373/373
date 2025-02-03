@@ -114,13 +114,13 @@ header #logo {
 }
 /*マウスオン時メニューの設定*/
 #menubar li a:hover {
-	background: #333;	/*背景色*/
+	background: #4166F5;	/*背景色*/
 	color: #fff; /*文字色*/
 }
 /*現在表示中(current)メニューの設定*/
 #menubar li.current a {
 	background: #000;	/*背景色（古いブラウザ用）*/
-	background: radial-gradient(ellipse 100px 50px at 50% 70px,#0b24c2,#000);	/*楕円形(幅100px高さ50px)グラデーション。左から50%＆上から70pxの場所に配置。#0b24c2が円の中心色で#000が外側の色。*/
+	background: radial-gradient(ellipse 100px 50px at 50% 70px,##D8BFD8,#000);	/*楕円形(幅100px高さ50px)グラデーション。左から50%＆上から70pxの場所に配置。#0b24c2が円の中心色で#000が外側の色。*/
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}
@@ -160,8 +160,8 @@ header #logo {
 	margin-bottom: 20px;
 	padding: 10px 15px;	/*上下、左右への余白*/
 	font-size: 16px;	/*文字サイズ*/
-	background: #F5F5DC; /* サブカラーのベージュ *//* グラデーションを適用 */
-	background: linear-gradient(to right, #F5F5DC, #EEE8AA);
+	background: #D8BFD8; /* サブカラーのベージュ *//* グラデーションを適用 */
+	background: linear-gradient(to right, #D8BFD8, #ff89ff);
 	border-bottom: 3px solid #FFD700; /* アクセントカラーのゴールド */
 }		/*枠線の幅、線種、色*/
 /*mainコンテンツのh3タグ設定*/
@@ -174,7 +174,7 @@ header #logo {
 }
 /*h3タグの１文字目への追加設定*/
 #main h3::first-letter {
-	border-left: 3px solid #0b24c2;	/*左の線の幅、線種、色*/
+	border-left: 3px solid #D8BFD8;	/*左の線の幅、線種、色*/
 	padding-left: 15px;				/*線とテキストとの余白*/
 }
 /*コンテンツの段落タグ設定*/
@@ -217,7 +217,7 @@ header #logo {
 	bottom: 10px;	/*ボックスの下から10pxの場所に配置*/
 	width: 30px;	/*幅*/
 	line-height: 30px;	/*高さ*/
-	background: #0b24c2;	/*背景色*/
+	background: #D8BFD8;	/*背景色*/
 }
 /*マウスオン時の「→」マーク*/
 #main .list a:hover::before {

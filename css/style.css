@@ -9,11 +9,11 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	color: #666;	/*全体の文字色*/
+	color: #5D4E72;	/*全体の文字色*/
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 15px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: #FFFFF6;	/*背景色*/
+	background: #F8F4F2;	/*背景色*/
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
 ul {list-style-type: none;}
@@ -29,7 +29,7 @@ a {
 	transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
 }
 a:hover {
-	color: #840000;			/*マウスオン時の文字色*/
+	color: #9EC2C2;			/*マウスオン時の文字色*/
 	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
 }
 
@@ -45,8 +45,8 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	background: #840000 url(../images/bg1.png);	/*背景色と背景画像の読み込み（古いブラウザ用）*/
-	background: url(../images/bg1.png), linear-gradient(#840000, #ca0000);		/*背景画像の読み込みと、グラデーション*/
+	background: #9EC2C2 url(../images/bg1.png);	/*背景色と背景画像の読み込み（古いブラウザ用）*/
+	background: url(../images/bg1.png), linear-gradient(#9EC2C2, #E0F2F7);		/*背景画像の読み込みと、グラデーション*/
 	height: 100px;	/*高さ*/
 	color: #fff;	/*文字色*/
 }
@@ -122,7 +122,7 @@ header #logo {
 /*現在表示中(current)メニューの設定*/
 #menubar li.current a {
 	background: #fff;	/*背景色*/
-	color: #840000;
+	color: #9EC2C2;
 	text-shadow: none;
 }
 /*スマホ用メニューを表示させない*/
@@ -164,7 +164,7 @@ header #logo {
 	font-size: 16px;	/*文字サイズ*/
 	background: #191919;	/*背景色（古いブラウザ用）*/
 	background: linear-gradient(#5e5e5e, #3c3c3c 49%, #191919 50%);		/*グラデーション*/
-	border-bottom: 3px solid #840000;		/*枠線の幅、線種、色*/
+	border-bottom: 3px solid #9EC2C2;		/*枠線の幅、線種、色*/
 	color: #fff;	/*文字色*/
 }
 /*mainコンテンツのh3タグ設定*/
@@ -177,7 +177,7 @@ header #logo {
 }
 /*h3タグの１文字目への追加設定*/
 #main h3::first-letter {
-	border-left: 3px solid #840000;	/*左の線の幅、線種、色*/
+	border-left: 3px solid #9EC2C2;	/*左の線の幅、線種、色*/
 	padding-left: 15px;				/*線とテキストとの余白*/
 }
 /*コンテンツの段落タグ設定*/

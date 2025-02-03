@@ -13,7 +13,7 @@ body {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 15px;
     line-height: 2;
-    background: #333; /* 背景色を濃いグレーに */
+    background: #b7ffdb; /* 背景色を濃いグレーに */
 }
 
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
@@ -120,7 +120,7 @@ header #logo {
 /*現在表示中(current)メニューの設定*/
 #menubar li.current a {
 	background: #000;	/*背景色（古いブラウザ用）*/
-	background: radial-gradient(ellipse 100px 50px at 50% 70px,#D8BFD8,#000);	/*楕円形(幅100px高さ50px)グラデーション。左から50%＆上から70pxの場所に配置。#0b24c2が円の中心色で#000が外側の色。*/
+	background: radial-gradient(ellipse 100px 50px at 50% 70px,#FF008C,#000);	/*楕円形(幅100px高さ50px)グラデーション。左から50%＆上から70pxの場所に配置。#0b24c2が円の中心色で#000が外側の色。*/
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}

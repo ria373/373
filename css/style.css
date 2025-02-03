@@ -364,7 +364,7 @@ header #logo {
 ---------------------------------------------------------------------------*/
 footer {
 	clear: both;
-	background: #333;	/*背景色*/
+	background: #D8BFD8;	/*背景色*/
 	font-size: 85%;	/*文字サイズ*/
 }
 footer .pr {display: block;font-size: 80%;}

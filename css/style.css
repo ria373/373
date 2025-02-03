@@ -198,7 +198,7 @@ header #logo {
 #main .list {
 	position: relative;overflow: hidden;
 	padding: 20px;		/*ボックス内の余白。ここを変更する際は、下の「.list a」のpaddingとmarginの数字も合わせる。marginの方はマイナス記号を忘れずに。*/
-	border-top: 1px solid #ccc;	/*上の線の幅、線種、色*/
+	border-top: 1px solid #E0F2F7;	/*上の線の幅、線種、色*/
 }
 #main .list a {
 	text-decoration: none;display: block;overflow: hidden;
@@ -219,16 +219,16 @@ header #logo {
 	bottom: 10px;	/*ボックスの下から10pxの場所に配置*/
 	width: 30px;	/*幅*/
 	line-height: 30px;	/*高さ*/
-	background: #840000;	/*背景色*/
+	background: #9EC2C2;	/*背景色*/
 	color: #fff;	/*文字色*/
 }
 /*マウスオン時の「→」マーク*/
 #main .list a:hover::before {
-	background: #f16f6f;	/*背景色*/
+	background: #5D4E72;	/*背景色*/
 }
 /*ボックス内のh4タグ設定*/
 #main .list h4 {
-	border-left: 3px solid #840000;	/*左側の線の幅、線種、色*/
+	border-left: 3px solid #9EC2C2;	/*左側の線の幅、線種、色*/
 	padding-left: 10px;	/*左の線との間に空ける余白*/
 	margin-bottom: 0.5em;	/*下に少しスペースを空ける*/
 	margin-left: 32%;	/*左側に空けるスペース。下の画像の幅を変更する場合はここも調整して下さい。*/
@@ -275,8 +275,8 @@ header #logo {
 #sub h2,
 #side h2 {
 	text-align: center;	/*文字をセンタリング*/
-	background: #840000;	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#f16f6f, #b00a0a 49%, #840000 50%);		/*グラデーション*/
+	background: #9EC2C2;	/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#E0F2F7, #4FC3F7 49%, #9EC2C2 50%);		/*グラデーション*/
 	padding: 8px 0px;	/*上下、左右への余白*/
 	border-radius: 6px 6px 0px 0px;	/*角丸のサイズ。左上、右上、右下、左下への設定*/
 	margin-bottom: 10px;
@@ -397,7 +397,7 @@ footer .pr {display: block;font-size: 80%;}
 #copyright {
 	clear: both;
 	text-align: center;
-	background: #333;	/*背景色*/
+	background: #9EC2C2;	/*背景色*/
 }
 #copyright a {text-decoration: none;}
 
@@ -499,7 +499,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 /*トップページのNEWアイコン
 ---------------------------------------------------------------------------*/
 .newicon {
-	background: #F00;	/*背景色*/
+	background: #5D4E72;	/*背景色*/
 	color: #FFF;		/*文字色*/
 	font-size: 70%;
 	line-height: 1.5;

@@ -7,14 +7,15 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 body {
-	margin: 0px;
-	padding: 0px;
-	color: #fff;	/*全体の文字色*/
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
-	font-size: 15px;	/*文字サイズ*/
-	line-height: 2;		/*行間*/
-	background: #000;	/*背景色*/
+    margin: 0px;
+    padding: 0px;
+    color: #FFF; /* 全体の文字色 */
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    background: #333; /* 背景色を濃いグレーに */
 }
+
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
 ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
@@ -45,9 +46,10 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	background: #0b24c2 url(../images/bg1.png);	/*背景色と背景画像の読み込み（古いブラウザ用）*/
-	background: url(../images/bg1.png), linear-gradient(#0b24c2, #1e4fff);		/*背景画像の読み込みと、グラデーション*/
-	height: 100px;	/*高さ*/
+    background: #D8BFD8; /* メインカラーのローズピンク */
+    /* グラデーションを適用 */
+    background: linear-gradient(to right, #D8BFD8, #C79ECF);
+    height: 100px;	/*高さ*/
 }
 /*ロゴ画像*/
 header #logo {
@@ -79,10 +81,11 @@ header #logo {
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
 #menubar {
-	clear: both;overflow: hidden;
-	background: #454545;	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#7d7d7d, #616161 49%, #454545 50%);		/*グラデーション*/
+    background: #F5F5DC; /* サブカラーのベージュ */
+    /* グラデーションを適用 */
+    background: linear-gradient(to right, #F5F5DC, #EEE8AA);
 }
+
 /*メニュー１個あたりの設定*/
 #menubar li {
 	float: left;	/*左に回り込み*/
@@ -130,6 +133,7 @@ header #logo {
 	clear: both;overflow: hidden;
 	padding-top: 40px;		/*上に空けるボックス内の余白*/
 	padding-bottom: 40px;	/*下に空けるボックス内の余白*/
+	 background: #333;
 }
 
 /*contents-in（mainとsubを囲むブロック）
@@ -156,10 +160,10 @@ header #logo {
 	margin-bottom: 20px;
 	padding: 10px 15px;	/*上下、左右への余白*/
 	font-size: 16px;	/*文字サイズ*/
-	background: #3c3c3c;	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#5e5e5e, #3c3c3c 49%, #191919 50%);		/*グラデーション*/
-	border-bottom: 3px solid #0b24c2;		/*枠線の幅、線種、色*/
-}
+	background: #F5F5DC; /* サブカラーのベージュ *//* グラデーションを適用 */
+	background: linear-gradient(to right, #F5F5DC, #EEE8AA);
+	border-bottom: 3px solid #FFD700; /* アクセントカラーのゴールド */
+}		/*枠線の幅、線種、色*/
 /*mainコンテンツのh3タグ設定*/
 #main h3 {
 	clear: both;
@@ -268,8 +272,8 @@ header #logo {
 #sub h2,
 #side h2 {
 	text-align: center;	/*文字をセンタリング*/
-	background: #0b24c2;	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#576edd, #344fd5 49%, #0b24c2 50%);		/*グラデーション*/
+	background: #D8BFD8; /* メインカラーのローズピンク *//* グラデーションを適用 */
+    　　background: linear-gradient(to right, #D8BFD8, #C79ECF);	/*グラデーション*/
 	padding: 8px 0px;	/*上下、左右への余白*/
 	border-radius: 6px 6px 0px 0px;	/*角丸のサイズ。左上、右上、右下、左下への設定*/
 	margin-bottom: 10px;
@@ -360,7 +364,7 @@ header #logo {
 ---------------------------------------------------------------------------*/
 footer {
 	clear: both;
-	background: #0b24c2;	/*背景色*/
+	background: #333;	/*背景色*/
 	font-size: 85%;	/*文字サイズ*/
 }
 footer .pr {display: block;font-size: 80%;}
@@ -503,7 +507,10 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 .mb15,.mb1em {margin-bottom: 15px;}
 .clear {clear: both;}
 ul.disc {padding: 0em 25px 15px;list-style: disc;}
-.color1, .color1 a {color: #ffcf3e;}
+.color1,
+.color1 a {
+    color: #FFD700; /* アクセントカラーのゴールド */
+}
 .pr {font-size: 10px;}
 .wl {width: 96%;}
 .ws {width: 50%;}

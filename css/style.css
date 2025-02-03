@@ -225,7 +225,7 @@ header #logo {
 }
 /*ボックス内のh4タグ設定*/
 #main .list h4 {
-	border-left: 3px solid #0b24c2;	/*左側の線の幅、線種、色*/
+	border-left: 3px solid #D8BFD8;	/*左側の線の幅、線種、色*/
 	padding-left: 10px;	/*左の線との間に空ける余白*/
 	margin-bottom: 0.5em;	/*下に少しスペースを空ける*/
 	margin-left: 32%;	/*左側に空けるスペース。下の画像の幅を変更する場合はここも調整して下さい。*/

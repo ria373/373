@@ -220,6 +220,17 @@ if (OCwindowWidth() <= 800) {
 if (OCwindowWidth() <= 800) {
 	open_close("menubar_hdr", "menubar-s");
 }
+// script.js
+const languageLinks = document.querySelectorAll('#language-switcher a');
+
+languageLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // デフォルトのリンク動作を停止
+    const lang = link.getAttribute('hreflang');
+    const newFileName = window.location.pathname.replace('index', `index_${lang}`); // ファイル名を変更
+    window.location.href = newFileName; // ページを移動
+  });
+});
 </script>
 
 

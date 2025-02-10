@@ -224,12 +224,21 @@ if (OCwindowWidth() <= 800) {
 const languageLinks = document.querySelectorAll('#language-switcher a');
 
 languageLinks.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault(); // デフォルトのリンク動作を停止
-    const lang = link.getAttribute('hreflang');
-    const newFileName = window.location.pathname.replace('index', `index_${lang}`); // ファイル名を変更
-    window.location.href = newFileName; // ページを移動
-  });
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const lang = link.getAttribute('hreflang');
+        let newPath;
+        if (lang === 'ja') {
+            newPath = window.location.pathname.replace(/_fr|_en/g, '') || window.location.pathname; // 日本語の場合、_fr _enを削除
+        } else {
+          if (!window.location.pathname.includes(`_${lang}`)) {
+            newPath = window.location.pathname.replace(/(\.html)/, `_${lang}$1`); // 英語・フランス語の場合、_en _frを追加
+          } else {
+            newPath = window.location.pathname;
+          }
+        }
+        window.location.href = newPath;
+    });
 });
 </script>
 

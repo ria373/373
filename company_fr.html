@@ -205,27 +205,6 @@ if (OCwindowWidth() <= 800) {
     open_close("menubar_hdr", "menubar-s");
 }
 
-const languageLinks = document.querySelectorAll('#language-switcher a');
-
-languageLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const lang = link.getAttribute('hreflang');
-        //const newFileName = window.location.pathname.replace('company', `company_${lang}`);
-        //window.location.href = newFileName;
-                let newPath;
-                if (lang === 'ja') {
-                    newPath = window.location.pathname.replace(/_fr|_en/g, '') || window.location.pathname;
-                } else {
-                    if (!window.location.pathname.includes(`_${lang}`)) {
-                        newPath = window.location.pathname.replace(/(\.html)/, `_${lang}$1`);
-                    } else {
-                        newPath = window.location.pathname;
-                    }
-                }
-                window.location.href = newPath;
-    });
-});
 </script>
 
 </body>

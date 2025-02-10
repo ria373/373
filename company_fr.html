@@ -215,6 +215,25 @@ if (OCwindowWidth() <= 800) {
 if (OCwindowWidth() <= 800) {
     open_close("menubar_hdr", "menubar-s");
 }
+const languageLinks = document.querySelectorAll('#language-switcher a');
+
+languageLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const lang = link.getAttribute('hreflang');
+        let newPath;
+        if (lang === 'ja') {
+            newPath = window.location.pathname.replace(/_fr|_en/g, '') || window.location.pathname; // 日本語の場合、_fr _enを削除
+        } else {
+          if (!window.location.pathname.includes(`_${lang}`)) {
+            newPath = window.location.pathname.replace(/(\.html)/, `_${lang}$1`); // 英語・フランス語の場合、_en _frを追加
+          } else {
+            newPath = window.location.pathname;
+          }
+        }
+        window.location.href = newPath;
+    });
+});
 
 </script>
 
